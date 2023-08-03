@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: darkblue;
+            /* animation: move 2s ease; */
+            /* animation-fill-mode: forwards; */
+        }
+
+        .box:hover {
+            animation: move 2s ease;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes move {
+            25% {
+                transform: translatex(150px);
+            }
+
+            50% {
+                transform: translatey(150px) translatex(150px);
+            }
+
+            75% {
+                transform: translatey(150px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

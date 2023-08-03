@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        div {
+            border: 1px solid aqua;
+        }
+
+        p {
+            border: 1px solid blue;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        div p {
+            color: cornflowerblue;
+        }
+
+        div>p {
+            color: darkblue;
+        }
+
+        p::first-line {
+            color: blue;
+        }
+
+        p::first-letter {
+            font-size: 2rem;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: darkcyan;
+            border: none;
+            transition: all ease 0.5s;
+        }
+        .box:hover{
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+        }
+        a:visited{
+            color:fuchsia;
+        }
+        a:active{
+            color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <footer>
+            <p>this is test test</p>
+            <p>this is test test</p>
+        </footer>
+        <p>this is test test</p>
+        <p>this is test test</p>
+    </div>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, praesentium! Expedita adipisci unde
+        doloremque sint ducimus, animi delectus deleniti debitis quisquam nostrum sit eum voluptates temporibus
+        recusandae facilis ipsa excepturi molestiae itaque minus aliquam? Esse quis sint, accusamus veniam porro
+        asperiores quisquam reiciendis sed eos id facilis qui cumque fugiat.
+    </p>
+    <hr>
+    <div class="box"></div>
+    <hr>
+    <a href="http://127.0.0.1:5500">MASH</a>
+</body>
+
+</html>

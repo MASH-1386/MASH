@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 20px;
+            transition: all ease 0.5s;
+            
+        }
+
+        .box-1:hover {
+            /* transform: translatex(50px);
+            transform: translatey(50px); */
+            transform: translate(100px, 40px);
+            /* transform: translatez(); برای عمق */
+        }
+
+        .box-2:hover {
+            background-color: blue;
+            /* transform: scalex(1.5);
+            transform: scaley(1.5); */
+            transform: scale(0.5, 1.5);
+        }
+
+        .box-3:hover {
+            /* transform: rotateX(80deg);
+            transform: rotateY(45deg); */
+            /* transform: rotateX(10deg) rotateY(25deg) */
+            transform: rotateX(80deg);
+        }
+
+        .box-4:hover {
+            transform: skew(10deg, 15deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+</body>
+
+</html>

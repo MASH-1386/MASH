@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=x, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .box1 {
+            width: calc(20%+30%);
+            padding: calc(20px/2);
+            background-color: aqua;
+            float: left;
+        }
+
+        .box2 {
+            width: calc(100%-50%);
+            padding: calc(20px/2);
+            border: 1px solid red;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">MASH</div>
+    <div class="box2">MASH2</div>
+</body>
+
+</html>
