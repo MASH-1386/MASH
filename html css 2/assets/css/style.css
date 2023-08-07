@@ -1,1 +1,7 @@
-.w-full {width: 100%;}
+.w-full {
+    width: 100%;
+}
+
+@media(min-width:600px) {
+    box-shadow: 0 0 0px gray !important;
+}
